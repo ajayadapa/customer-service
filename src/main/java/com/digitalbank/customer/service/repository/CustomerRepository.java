@@ -1,10 +1,10 @@
-package com.digitalbank.customerservice.repository;
+package com.digitalbank.customer.service.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.digitalbank.customerservice.models.CustomerEntity;
+import com.digitalbank.common.model.CustomerEntity;
 
 
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> {
@@ -15,4 +15,5 @@ public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> 
 	Optional<CustomerEntity> findByPhone(String phone);
 
 
+	Optional<CustomerEntity> findByUserIdAndEmailAndIdNumber(String userId, String email, String idNumber);
 }

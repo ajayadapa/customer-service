@@ -1,4 +1,4 @@
-package com.digitalbank.customerservice.config;
+package com.digitalbank.customer.service.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

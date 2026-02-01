@@ -1,13 +1,13 @@
-package com.digitalbank.customerservice.dto;
+package com.digitalbank.customer.service.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
-@Data
-@AllArgsConstructor
+
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class CustomerResponse {
 
     private String firstName;
@@ -18,6 +18,7 @@ public class CustomerResponse {
     private String userId;
     private Boolean active;
     private String kycStatus;
+    private String cif;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 

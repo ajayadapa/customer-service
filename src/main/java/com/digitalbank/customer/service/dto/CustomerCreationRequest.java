@@ -1,13 +1,12 @@
-package com.digitalbank.customerservice.dto;
+package com.digitalbank.customer.service.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class CustomerCreationRequest {
@@ -29,5 +28,8 @@ public class CustomerCreationRequest {
 	
 	@NotBlank
 	private String userId;
+
+	@NotBlank
+	private String idNumber;
 
 }
